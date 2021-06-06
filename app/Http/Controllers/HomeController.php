@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\About;
 use App\Banner;
+use App\Legal;
 use Illuminate\Http\Request;
 use App\Property;
 
@@ -31,8 +32,10 @@ class HomeController extends Controller
     public function about()
     {
         $data = About::findOrFail('1');
+        $legal = Legal::all();
         return view('pages.tentang', [
-            'data' => $data
+            'data' => $data,
+            'legal' => $legal
         ]);
     }
 

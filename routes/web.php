@@ -54,6 +54,8 @@ Route::prefix('dashboard-admin')
         Route::resource('/data/foto-banner', 'BannerController');
         Route::resource('/data/blog', 'BlogController');
 
+        Route::resource('/data/legal', 'LegalController');
+
         Route::resource('/data/pengguna', 'PenggunaController');
         Route::resource('/about', 'AboutController');
         Route::get('/account', 'AccountController@showAccount')->name('show-account');

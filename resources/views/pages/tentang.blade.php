@@ -50,18 +50,21 @@
           <p>Sertifikat Legalitas</p>
         </div>
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <div class="card-img">
-                <img src="{{ asset('assets/img/events-1.jpg') }}" alt="..." class="xzoom" xoriginal="{{ asset('assets/img/events-1.jpg') }}">
+          @foreach ($legal as $l)
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="{{ Storage::url($l->image) }}" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">{{ $l->title }}</a></h5>                  
+                  <p class="card-text">
+                    {!! $l->description !!}
+                  </p>
+                </div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
-                <p class="font-italic text-center">Sunday, September 26th at 7:00 pm</p>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-              </div>
-            </div>
-          </div>          
+            </div>    
+          @endforeach                    
         </div>
 
       </div>

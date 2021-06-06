@@ -52,7 +52,8 @@
                 <a class="nav-link pl-3" href="{{ route('properti-dijual.index') }}"><span class="ml-1">Data Properti</span></a>
                 <a class="nav-link pl-3" href="{{ route('pengguna.index') }}"><span class="ml-1">Data Pengguna Sistem</span></a> 
                 <a class="nav-link pl-3" href="{{ route('foto-banner.index') }}"><span class="ml-1">Foto Banner</span></a>     
-                <a class="nav-link pl-3" href="{{ route('blog.index') }}"><span class="ml-1">Blog</span></a>                                 
+                <a class="nav-link pl-3" href="{{ route('blog.index') }}"><span class="ml-1">Blog</span></a>
+                <a class="nav-link pl-3" href="{{ route('legal.index') }}"><span class="ml-1">Edit Foto Legalitas</span></a>                                 
               </ul>
             </li>
           </ul>
