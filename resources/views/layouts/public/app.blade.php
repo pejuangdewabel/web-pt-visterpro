@@ -38,6 +38,7 @@
   @include('includes.public.script')
 
   @stack('addon-script')
+  @stack('before-script')
 </body>
 
 </html>

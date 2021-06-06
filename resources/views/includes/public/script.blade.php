@@ -1,5 +1,5 @@
 <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
+  {{-- <div id="preloader"></div> --}}
 
   <!-- Vendor JS Files -->
   <script src="{{ url('assets/vendor/jquery/jquery.min.js') }}"></script>
