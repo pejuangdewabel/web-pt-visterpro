@@ -1,0 +1,17 @@
+nama_properti
+ukuran
+harga_dp
+harga_cash
+harga_permeter
+kata_thumb
+foto
+deskripsi
+lokasi
+kabkot
+syarat
+dekat
+status1 = tanah / bangunan
+status2 = dijual ayau disewakan
+
+
+
