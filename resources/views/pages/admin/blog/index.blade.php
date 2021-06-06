@@ -99,7 +99,7 @@
                                                     style="max-height: 40px">
                                         </td>
                                         <td>
-                                            <form action="{{ route('blog.destroy', $b->id) }}" method="POST">
+                                            <form action="{{ route('blog.destroy', $b->id) }}" method="POST" enctype="multipart/form-data">
                                                 @csrf
                                                 @method('delete')
                                                 <button class="btn btn-danger btn-sm text-white mt-3">

@@ -103,6 +103,10 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = Blog::findOrFail($id);
+
+        $item->delete();
+
+        return redirect()->route('blog.index')->with('message-delete', 'Data Berhasil Dihapus');
     }
 }
